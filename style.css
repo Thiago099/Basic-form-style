@@ -2,19 +2,25 @@
   margin: 0 auto;
   max-width: 1000px;
 }
-.input{
-  padding: 5px;
-  border-radius: 3px;
-  border: 1px solid var(--color);
-  color: var(--color);
+.form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.input,.button{
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #333;
   outline: none;
   width: 100%;
 }
-input:-webkit-autofill {
-  -webkit-text-fill-color: var(--color);
+.button{
+  box-shadow: inset -5px -5px 10px rgba(0,0,0,0.08);
+  cursor: pointer;
 }
-input:-webkit-autofill:focus {
-  -webkit-text-fill-color: var(--color);
+.button:active{
+  box-shadow: inset 5px 5px 10px rgba(0,0,0,0.08);
 }
 .label{
   margin-bottom: 5px;
@@ -22,19 +28,20 @@ input:-webkit-autofill:focus {
   font-size: 1.2em;
   color: var(--color);
 }
-.input-container{
+.input-group{
   box-sizing: border-box;
   display:inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border:10px solid transparent;
+  padding: 10px;
 }
-.blue{
-  --color: rgb(19, 149, 219);
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
-.orange{
-  --color: rgb(221, 61, 20);
-}
-.green{
-  --color: rgb(0, 128, 0);
+body{
+  margin: 0;
 }
