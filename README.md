@@ -3,7 +3,7 @@
 
 # how to run
 open the folder in the terminal of you choice and run once:
-npm install
+`npm install`
 
 then every other time:
-npm run dev
+`npm run dev`
