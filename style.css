@@ -1,0 +1,40 @@
+.container{
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.input{
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid var(--color);
+  color: var(--color);
+  outline: none;
+  width: 100%;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: var(--color);
+}
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--color);
+}
+.label{
+  margin-bottom: 5px;
+  display: block;
+  font-size: 1.2em;
+  color: var(--color);
+}
+.input-container{
+  box-sizing: border-box;
+  display:inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border:10px solid transparent;
+}
+.blue{
+  --color: rgb(19, 149, 219);
+}
+.orange{
+  --color: rgb(221, 61, 20);
+}
+.green{
+  --color: rgb(0, 128, 0);
+}
